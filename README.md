@@ -127,7 +127,7 @@ if __FILE__ == $0 #This script code is executed when running this file.
 
    result = JsonDiffer.get_diff(first, second)
    
-   puts result
+   puts result.to_json
 
 end
 
