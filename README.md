@@ -14,6 +14,7 @@ Based on this code: https://github.com/a2design-inc/json-compare
   },
   "country_metro": {
     "United States": {
+      "Longmont CO, US": "1.3",
       "Chicago IL, US": "2.3",
       "Colorado Springs-Pueblo CO, US": "2.6",
       "Dallas-Fort Worth TX, US": "2.5",
@@ -38,12 +39,13 @@ Based on this code: https://github.com/a2design-inc/json-compare
   },
   "country_metro": {
     "United States": {
+      "Longmont CO, US": "1.3",
       "Colorado Springs-Pueblo CO, US": "2.6",
-      "Dallas-Fort Worth TX, US": "2.5",
-      "Denver CO, US": "33.2",
-      "Los Angeles CA, US": "3.1",
+      "Odebolt IA, US": "2.5",
+      "Denver CO, US": "38.2",
+      "Los Angeles CA, US": "2.1",
       "Minneapolis-St. Paul MN, US": "8.7",
-      "New York NY, US": "2.4"
+      "New York NY, US": "5.4"
     }
   },
   "language": {
@@ -52,9 +54,20 @@ Based on this code: https://github.com/a2design-inc/json-compare
   }
 }
 
-## Ouputs
+## Ouputs 
 
+Not there yet, but working towards hives with append/remove/update/same contents. And will convert to JSON.
 
+{:update=>
+
+{"gender"=>{
+       :update=>{"Female"=>"58.8", "Male"=>"40.6"}}, 
+"country_metro"=>{
+       :update=>{"United States"=>{
+              :append=>{"Odebolt IA, US"=>"2.5"}, 
+              :remove=>{"Chicago IL, US"=>"2.3", "Dallas-Fort Worth TX, US"=>"2.5"}, 
+              :update=>{"Denver CO, US"=>"38.2", "Los Angeles CA, US"=>"2.1", "Minneapolis-St. Paul MN, US"=>"8.7", "New York NY, US"=>"5.4"}}}}, 
+"language"=>{:update=>{"English"=>"80.2", "Spanish"=>"7.3"}}}}
 
 
 
