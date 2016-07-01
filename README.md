@@ -1,6 +1,7 @@
 # json-diff
 Generates the differences in two JSON files. Built to work with *numeric* values of keys in common.
 
+Based on this code: https://github.com/a2design-inc/json-compare
 
 ## Inputs
 
