@@ -62,7 +62,7 @@ Updated to generate numeric differences (seond - first) for keys with numeric va
 }
 ```
 
-## Ouputs 
+## Output 
 
 Not there yet, but getting there... Need to reference 'before' value in addition to difference.
 
