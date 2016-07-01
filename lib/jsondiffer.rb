@@ -1,3 +1,6 @@
+#Based on https://github.com/a2design-inc/json-compare
+#Updated to generate numeric differences (seond - first) for keys with numeric values, and added a 'same' collection.
+
 class JsonDiffer
 
    attr_accessor :excluded_keys
