@@ -3,6 +3,9 @@ Generates the differences in two JSON files. Built to work with *numeric* values
 
 Based on this code: https://github.com/a2design-inc/json-compare
 
+Updated to generate numeric differences (seond - first) for keys with numeric values, and added a 'same' collection.
+
+
 ## Inputs
 
 ### results #1:
