@@ -61,19 +61,48 @@ Based on this code: https://github.com/a2design-inc/json-compare
 
 ## Ouputs 
 
-Not there yet, but working towards hives with append/remove/update/same contents. And will convert to JSON.
+Not there yet, but getting there... Need to reference 'before' value in addition to difference.
 
 ```
-{:update=>
-
-{"gender"=>{
-       :update=>{"Female"=>"58.8", "Male"=>"40.6"}}, 
-"country_metro"=>{
-       :update=>{"United States"=>{
-              :append=>{"Odebolt IA, US"=>"2.5"}, 
-              :remove=>{"Chicago IL, US"=>"2.3", "Dallas-Fort Worth TX, US"=>"2.5"}, 
-              :update=>{"Denver CO, US"=>"38.2", "Los Angeles CA, US"=>"2.1", "Minneapolis-St. Paul MN, US"=>"8.7", "New York NY, US"=>"5.4"}}}}, 
-"language"=>{:update=>{"English"=>"80.2", "Spanish"=>"7.3"}}}}
+{
+  "update": {
+    "gender": {
+      "update": {
+        "Female": 10,
+        "Male": -10
+      }
+    },
+    "country_metro": {
+      "update": {
+        "United States": {
+          "append": {
+            "Odebolt IA, US": "2.5"
+          },
+          "remove": {
+            "Chicago IL, US": "2.3",
+            "Dallas-Fort Worth TX, US": "2.5"
+          },
+          "update": {
+            "Denver CO, US": 5,
+            "Los Angeles CA, US": -1,
+            "Minneapolis-St. Paul MN, US": 7,
+            "New York NY, US": 3
+          },
+          "same": {
+            "Longmont CO, US": 0,
+            "Colorado Springs-Pueblo CO, US": 0
+          }
+        }
+      }
+    },
+    "language": {
+      "update": {
+        "English": -4,
+        "Spanish": 5
+      }
+    }
+  }
+}
 ```
 
 
