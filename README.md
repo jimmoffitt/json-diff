@@ -7,6 +7,7 @@ Based on this code: https://github.com/a2design-inc/json-compare
 
 ### results #1:
 
+```
 {
   "gender": {
     "Female": "48.8",
@@ -29,9 +30,12 @@ Based on this code: https://github.com/a2design-inc/json-compare
     "Spanish": "2.3"
   }
 }
+```
+
 
 ### results #2:
 
+```
 {
   "gender": {
     "Female": "58.8",
@@ -53,11 +57,13 @@ Based on this code: https://github.com/a2design-inc/json-compare
     "Spanish": "7.3"
   }
 }
+```
 
 ## Ouputs 
 
 Not there yet, but working towards hives with append/remove/update/same contents. And will convert to JSON.
 
+```
 {:update=>
 
 {"gender"=>{
@@ -68,12 +74,13 @@ Not there yet, but working towards hives with append/remove/update/same contents
               :remove=>{"Chicago IL, US"=>"2.3", "Dallas-Fort Worth TX, US"=>"2.5"}, 
               :update=>{"Denver CO, US"=>"38.2", "Los Angeles CA, US"=>"2.1", "Minneapolis-St. Paul MN, US"=>"8.7", "New York NY, US"=>"5.4"}}}}, 
 "language"=>{:update=>{"English"=>"80.2", "Spanish"=>"7.3"}}}}
-
+```
 
 
 ## Code
 
-require_relative './lib/json-compare'
+```
+require_relative './lib/jsondiffer'
 require 'json'
 
 if __FILE__ == $0 #This script code is executed when running this file.
@@ -84,8 +91,10 @@ if __FILE__ == $0 #This script code is executed when running this file.
    first = JSON.parse(json1)
    second = JSON.parse(json2)
 
-   result = JsonCompare.get_diff(first, second, 'audience')
+   result = JsonDiffer.get_diff(first, second)
    
    puts result
 
 end
+
+```
