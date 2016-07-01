@@ -1,0 +1,37 @@
+{
+  "gender": {
+    "Female": "48.8",
+    "Male": "50.6"
+  },
+  "country_metro": {
+    "United States": {
+      "Longmont CO, US": "1.3",
+      "Chicago IL, US": "2.3",
+      "Colorado Springs-Pueblo CO, US": "2.6",
+      "Dallas-Fort Worth TX, US": "2.5",
+      "Denver CO, US": "33.2",
+      "Los Angeles CA, US": "3.1",
+      "Minneapolis-St. Paul MN, US": "1.7",
+      "New York NY, US": "2.4"
+    }
+  },
+  "language": {
+    "English": "84.2",
+    "Spanish": "2.3"
+  },
+  "audience": {
+    "id": "173058b4-9d54-4f47-bd0b-17677ca8f87f",
+    "name": "results_diff_1",
+    "created": "2016-06-27T22:22:25Z",
+    "last_modified": "2016-06-27T22:22:25Z",
+    "num_user_ids": "5000",
+    "num_distinct_user_ids": "4990",
+    "state": "available",
+    "segment_ids": [
+      "492e2639-c850-423c-8e30-65b5d616b901"
+    ],
+    "segment_names": [
+      "results_diff_1"
+    ]
+  }
+}
