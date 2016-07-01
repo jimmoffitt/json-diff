@@ -63,6 +63,8 @@ Based on this code: https://github.com/a2design-inc/json-compare
 
 Not there yet, but getting there... Need to reference 'before' value in addition to difference.
 
+Differences are based on [Second] - [First].
+
 ```
 {
   "update": {
